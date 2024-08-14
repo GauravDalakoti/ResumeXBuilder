@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
 
-      "/api": "http://localhost:8000"
+      "/api": "https://resume-builder-x.vercel.app"
     }
   },
   plugins: [react()],
