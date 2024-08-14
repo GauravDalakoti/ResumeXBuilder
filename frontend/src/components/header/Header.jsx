@@ -54,7 +54,7 @@ function Header() {
 
                         <li className="flex items-center justify-center gap-1 hover:scale-105">
                             <img src={assests.contact} alt="" width={25} />
-                            <a href="https://resume-x-builder-frontend.vercel.app/contact-us" className=" hover:text-gray-300">Contact us</a>
+                            <a href="/contact-us" className=" hover:text-gray-300">Contact us</a>
                         </li>
                     </ul>
 
