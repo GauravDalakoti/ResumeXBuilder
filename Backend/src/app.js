@@ -7,7 +7,7 @@ const app = express()
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://resume-x-builder-frontend.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
