@@ -31,8 +31,7 @@ function Login() {
 
           'Content-Type': "application/json"
         },
-        body: JSON.stringify(user),
-        withCredentials: true
+        body: JSON.stringify(user)
 
       });
 
