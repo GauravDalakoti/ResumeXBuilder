@@ -11,8 +11,8 @@ function Header() {
 
     const logOutHandler = async () => {
 
-        console.log("true");
-        
+        console.log("before true");
+
         const response = await fetch("https://resume-builder-x.vercel.app/api/v1/users/logout", {
 
             method: "POST",
