@@ -24,7 +24,7 @@ function SignUp() {
         console.log(user)
 
         try {
-            const response = await fetch(`/api/v1/users/register`, {
+            const response = await fetch(`https://resume-builder-x.vercel.app/api/v1/users/register`, {
                 method: "POST",
                 headers: {
 
@@ -52,7 +52,6 @@ function SignUp() {
             console.log("Error while uploading data on the database", error)
         }
     }
-
 
     return (
         <>
