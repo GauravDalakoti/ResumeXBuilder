@@ -11,6 +11,8 @@ function Header() {
 
     const logOutHandler = async () => {
 
+        console.log("true");
+        
         const response = await fetch("https://resume-builder-x.vercel.app/api/v1/users/logout", {
 
             method: "POST",
@@ -24,6 +26,7 @@ function Header() {
 
         if (response.ok) {
 
+            console.log("true")
             setLogin(false)
             localStorage.removeItem("AccessToken")
             localStorage.removeItem("email")
