@@ -53,9 +53,9 @@ function Login() {
         setError(true)
       }
 
-      // const res = await response.json()
+      const res = await response.json()
 
-      // console.log(res.data.loggedInUser)
+      console.log(res.data.loggedInUser)
     } catch (error) {
 
       console.log("Error while uploading data on the  database", error)
