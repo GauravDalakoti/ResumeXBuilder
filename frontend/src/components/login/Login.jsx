@@ -25,7 +25,7 @@ function Login() {
     e.preventDefault()
 
     try {
-      const response = await fetch(`/api/v1/users/login`, {
+      const response = await fetch(`https://resume-builder-x.vercel.app/api/v1/users/login`, {
         method: "POST",
         headers: {
 
