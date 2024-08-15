@@ -18,6 +18,11 @@ connectDB()
             throw error
         })
 
+        app.get("/", (req, res) => {
+
+            res.send("hello server running")
+        })
+
         app.listen(process.env.PORT || 8000, () => {
 
             console.log(`Server is running at port http://localhost:${process.env.PORT}`)
