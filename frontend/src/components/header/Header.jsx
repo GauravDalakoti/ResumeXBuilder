@@ -20,7 +20,8 @@ function Header() {
 
                 'Content-Type': "application/json"
             },
-            body: JSON.stringify()
+            // body: JSON.stringify()
+            credentials:"include"
         })
         const res = response.json()
 
