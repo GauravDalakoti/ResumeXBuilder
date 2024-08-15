@@ -16,6 +16,11 @@ function Header() {
         const response = await fetch("https://resume-builder-x.vercel.app/api/v1/users/logout", {
 
             method: "POST",
+            headers: {
+
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify()
         })
         const res = response.json()
 
@@ -29,7 +34,7 @@ function Header() {
             setUserData({ username: "", email: "" })
 
         }
-        console.log(res);
+        console.log(response);
     }
 
     const [displayMenu, setDisplayMenu] = useState(false)
