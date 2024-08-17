@@ -17,9 +17,7 @@ function Header() {
 
             method: "POST",
             headers: {
-
-                'Content-Type': "application/json",
-                'Authorization': localStorage.getItem("AccessToken")
+                'Authorization': `Bearer ${localStorage.getItem("AccessToken")}`
             },
             // body: JSON.stringify()
             credentials: "include"
