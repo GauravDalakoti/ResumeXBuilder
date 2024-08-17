@@ -5,11 +5,14 @@ import userRouter from "./routes/user.routes.js"
 
 const app = express()
 
+app.set("trust proxy", 2)
+
 app.use(cors(
     {
         origin: ["https://resume-x-maker.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true,
+
     }
 ))
 
