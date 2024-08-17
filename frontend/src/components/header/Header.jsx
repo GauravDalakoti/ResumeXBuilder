@@ -18,7 +18,8 @@ function Header() {
             method: "POST",
             headers: {
 
-                'Content-Type': "application/json"
+                'Content-Type': "application/json",
+                'Cookie': localStorage.getItem("AccessToken")
             },
             // body: JSON.stringify()
             credentials: "include"

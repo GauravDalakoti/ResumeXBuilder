@@ -12,7 +12,6 @@ app.use(cors(
         origin: ["https://resume-x-maker.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true,
-
     }
 ))
 
