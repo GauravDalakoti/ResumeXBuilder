@@ -19,7 +19,7 @@ function Header() {
             headers: {
 
                 'Content-Type': "application/json",
-                'Cookie': localStorage.getItem("AccessToken")
+                'Authorization': localStorage.getItem("AccessToken")
             },
             // body: JSON.stringify()
             credentials: "include"
